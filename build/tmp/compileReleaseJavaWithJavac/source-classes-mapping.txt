@@ -1,0 +1,7 @@
+com/sample/MainActivity.java
+ com.sample.MainActivity
+ com.sample.MainActivity$1
+com/sample/BuildConfig.java
+ com.sample.BuildConfig
+com/sample/PersonalInfoDialog.java
+ com.sample.PersonalInfoDialog

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_profile"
+        android:textColor="#ffff00"
+        android:background="#00b3b3"
+        android:textSize="25dp"
+        android:gravity="center"/>
+    
+    <!-- Personal info -->
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:stretchColumns="1,2">
+        <TableRow>
+            <TextView
+                android:text="@string/label_full_name"/>
+
+            <EditText
+                android:id="@+id/full_name"
+                android:layout_marginLeft="20dp"
+                android:singleLine="true"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="@string/label_identity_card_number"/>
+            <EditText
+                android:id="@+id/identity_card_number"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"/>
+        </TableRow>
+    </TableLayout>
+
+    <!-- Degree info -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_degree"
+        android:textColor="#ffff00"
+        android:background="#0099ff"
+        android:textSize="17dp"
+        android:gravity="center"/>
+    <RadioGroup
+        android:id="@+id/degree_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/radio_item_university">
+        <RadioButton
+            android:id="@+id/radio_item_intermediate"
+            android:text="@string/radio_intermediate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/radio_item_college"
+            android:text="@string/radio_college"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/radio_item_university"
+            android:text="@string/radio_university"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <!-- Given info -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_given"
+        android:textColor="#ffff00"
+        android:background="#0099ff"
+        android:textSize="17dp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:id="@+id/given_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:text="@string/checkbox_read_news"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <CheckBox
+            android:text="@string/checkbox_read_books"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <CheckBox
+            android:text="@string/checkbox_read_codes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <!-- Provider info -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_provider_info"
+        android:textColor="#ffff00"
+        android:background="#0099ff"
+        android:textSize="17dp"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/provider_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"/>
+
+    <!-- Send button -->
+    <Button
+        android:id="@+id/send_info_btn"
+        android:text="@string/button_send_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
